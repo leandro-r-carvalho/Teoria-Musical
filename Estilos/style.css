@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Instrument+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Instrument+Serif&display=swap');
+
+root {
+    --cor0: #2319E3;
+    --cor1: #1B51E3;
+    --cor2: #2894E0;
+    --cor3: #0D2370;
+
+    --fonte-titulo: 'DM Serif Display', serif;
+    --fonte-padrao: 'Instrument Serif', serif;
+    --fonte-destaque: 'Abril Fatface', serif;  
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: blue;
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+header > p {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 1.8em;
+}
+
+main {
+    background-color: silver;
+    padding-top: 20px;
+}
+
+section {
+    padding-top: 20px;
+    width: 600px;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+    margin: auto;
+}
+
+section > h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
