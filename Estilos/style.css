@@ -1,17 +1,16 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Instrument+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Instrument+Serif&display=swap');
 
-root {
-    --cor0: #2319E3;
-    --cor1: #1B51E3;
-    --cor2: #2894E0;
-    --cor3: #0D2370;
+:root {
+    --cor0: #86d1ff;
+    --cor1: #2894E0;
+    --cor2: #03588C;
+    --cor3: #011640;
+    --cor4: #010D26;
 
     --fonte-titulo: 'DM Serif Display', serif;
     --fonte-padrao: 'Instrument Serif', serif;
-    --fonte-destaque: 'Abril Fatface', serif;  
 }
 
 * {
@@ -20,39 +19,150 @@ root {
 }
 
 header {
-    background-color: blue;
+    /*background-color: var(--cor3);*/
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     padding: 10px;
 }
 
 header > h1 {
     text-align: center;
     font-family: var(--fonte-titulo);
-    font-size: 3em;
-    margin-bottom: 30px;
+    font-size: 4em;
+    margin-bottom: 25px;
 }
 
 header > p {
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-titulo);
+    color: var(--cor4);
+    font-weight: normal;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+nav {
+    padding: 10px;
+    width: 600px;
+    box-shadow: 0px 3px 3px var(--cor3);
+    margin: auto;
+    text-align: center;
+}
+
+nav a {
+    font-family: var(--fonte-titulo);
+    color: var(--cor4);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-decoration: underline;
 }
 
 main {
-    background-color: silver;
+    min-width: 300px;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
     padding-top: 20px;
 }
 
 section {
-    padding-top: 20px;
-    width: 600px;
+    max-width: 800px;
     text-align: justify;
-    font-family: var(--fonte-padrao);
-    padding: 10px;
+    padding: 10px 20px;
     margin: auto;
+    border-radius: 10px;
 }
 
 section > h2 {
-    font-family: var(--fonte-destaque);
+    background-color: var(--cor3);
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    letter-spacing: 3px;
     font-size: 1.8em;
-    padding-bottom: 15px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section > p {
+    padding: 10px 20px;
+    background-color: var(--cor0);
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-indent: 25px;
+}
+
+section > p.final {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section.imagens hr{
+    margin: 10px 0;
+    border: none;
+    border-top: 5px solid var(--cor0);
+    width: 800px;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section .foto{
+    border-radius: 8px;
+    border:2px solid var(--cor0);
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .foto img{
+    max-width: 100%;
+}
+
+section .foto .curso{
+    font-size: 18px;
+    color: var(--cor3);
+    margin-top: 15px;
+}
+
+section .foto .info{
+    margin-top: 15px;
+    color: var(--cor3);
+}
+
+section .foto .info .categories{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+section .foto .info .price{
+    padding: 5px;
+    font-size: 28px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    color: var(--cor3);
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
