@@ -84,6 +84,7 @@ section > h2 {
     font-family: var(--fonte-titulo);
     font-weight: normal;
     letter-spacing: 3px;
+    text-align: center;
     font-size: 1.8em;
     padding: 10px;
     border-top-left-radius: 10px;
@@ -96,12 +97,27 @@ section > p {
     font-weight: bold;
     font-size: 1.3em;
     line-height: 1.5em;
-    text-indent: 25px;
 }
 
 section > p.final {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+section > p > img {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+
+    max-width: 80%;
+}
+
+section > p.descricao {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
 }
 
 section.imagens hr{
