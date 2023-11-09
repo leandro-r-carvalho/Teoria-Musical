@@ -67,7 +67,12 @@ main {
     min-width: 300px;
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
-    padding-top: 20px;
+    padding-top: 20px; 
+}
+
+main > div {
+    text-align: center;
+    padding: 15px;
 }
 
 section {
@@ -82,21 +87,21 @@ section {
 */
 section.imagem {
     font-family: var(--fonte-padrao);
-    color: white;
     background-size: cover;
     background-attachment: fixed;
     padding: 0px;
 }
 
 section.imagem > p {
+    color: white;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.350); 
-    min-width: 350px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.514);
 }
 
 section#img01 {
-    background-image: url('../imagens/fundo1.jpg');
-   
+    background-image: url('../imagens/fundo2.jpg');
+    background-position: right center;
 }
 /*Fim dos testes*/
 
@@ -130,7 +135,6 @@ section > p > img {
     margin: auto;
     display: block;
     margin-top: 10px;
-
     max-width: 80%;
 }
 
@@ -212,7 +216,6 @@ footer .container {
     justify-content: space-around;
     padding: 0px 8px;
     margin: auto;
-
 }
 
 footer h3 {
